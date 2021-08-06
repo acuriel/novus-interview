@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "Docker Node.js Launch",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug",
+      "platform": "node",
+      "node": {
+        "package": "${workspaceFolder}/transactions-ui/package.json",
+        "localRoot": "${workspaceFolder}/transactions-ui"
+      }
+    }
+  ]
+}

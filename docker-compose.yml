@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  transactions_api:
+    image: transactions_api
+    container_name: transactions_api
+    hostname: transactions_api
+    build:
+      context: ./transactions-api
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    environment: 
+      - NOVUS_MONGO_URL=mongodb://novus_mongodb:27017
+  transactions_ui:
+    image: transactions_ui
+    container_name: transactions_ui
+    hostname: transactions_ui
+    build:
+      context: ./transactions-ui
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
+    environment: 
+      - NOVUS_API_URL=http://transactions_api:5000
+  mongodb:
+    image: mongo:latest
+    container_name: novus_mongodb
+    hostname: novus_mongodb
+    ports: 
+      - 27017:27017
+

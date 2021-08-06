@@ -1,0 +1,66 @@
+[
+  {
+    "amount": 1000,
+    "currency": "EUR",
+    "booked": true,
+    "user_id":"katelynn",
+    "partner":"michale"
+  },
+  {
+    "amount": 2000,
+    "currency": "USD",
+    "booked": true,
+    "user_id":"katelynn",
+    "partner":"leatha"
+  },
+  {
+    "amount": 550,
+    "currency": "EUR",
+    "booked": false,
+    "user_id":"michale",
+    "partner":"katelynn"
+  },
+  {
+    "amount": 80000,
+    "currency": "EUR",
+    "booked": false,
+    "user_id":"leatha",
+    "partner":"katelynn"
+  },
+  {
+    "amount": 85,
+    "currency": "EUR",
+    "booked": true,
+    "description": "Amazon Products",
+    "user_id":"karlee",
+    "partner":""
+  },
+  {
+    "amount": 1250,
+    "currency": "EUR",
+    "booked": false,
+    "description": "Starbucks",
+    "user_id":"karlee"
+  },
+  {
+    "amount": 1130,
+    "currency": "EUR",
+    "booked": true,
+    "description": "Amazon Products",
+    "user_id":"katelynn"
+  },
+  {
+    "amount": 1000,
+    "currency": "EUR",
+    "booked": false,
+    "description": "Costa Cafe",
+    "user_id":"katelynn"
+  },
+  {
+    "amount": 800,
+    "currency": "EUR",
+    "booked": false,
+    "description": "Costa Cafe",
+    "user_id":"henri"
+  }
+]
